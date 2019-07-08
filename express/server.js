@@ -20,6 +20,9 @@ app.use(function (req, res, next) {
 // access from any point to the backend(*).
 // acepted methods.
 
+require('../models/person'); // run line to line the file
+require('../models/pet');
+
 const MONGO_DB_URI = process.env.MONGO_DB_URI
   ? process.env.MONGO_DB_URI
   : config.MONGO_DB_URI;
