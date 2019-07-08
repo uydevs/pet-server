@@ -24,6 +24,7 @@ require('../models/person'); // run line to line the file
 require('../models/pet');
 
 require('../routes/people')(router); // add files to router
+require('../routes/pets')(router);
 
 const MONGO_DB_URI = process.env.MONGO_DB_URI
   ? process.env.MONGO_DB_URI
