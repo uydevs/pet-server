@@ -22,9 +22,11 @@ app.use(function (req, res, next) {
 
 require('../models/person'); // run line to line the file
 require('../models/pet');
+require('../models/competition');
 
 require('../routes/people')(router); // add files to router
 require('../routes/pets')(router);
+require('../routes/competition')(router);
 
 const MONGO_DB_URI = process.env.MONGO_DB_URI
   ? process.env.MONGO_DB_URI
