@@ -11,3 +11,8 @@ const postCompetition = async (competition) => {
   return Competition.find();
 }
 
+
+module.exports = {
+  getCompetitions,
+  postCompetition,
+}
