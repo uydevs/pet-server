@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const {Schema} = mongoose;
+const { Schema } = mongoose;
 
 const personSchema = new Schema({
   name: String,
@@ -7,4 +7,3 @@ const personSchema = new Schema({
 });
 
 mongoose.model('person', personSchema, 'people');
-
