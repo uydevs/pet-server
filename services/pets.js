@@ -8,7 +8,7 @@ const getPetsOfPerson = async personId => {
 const postPet = async pet => {
   const p = new Pet(pet);
   await p.save();
-  return Pet.find();
+  return Pet.find({ personId: p.personId });
 };
 
 const deletePet = async petId => {
